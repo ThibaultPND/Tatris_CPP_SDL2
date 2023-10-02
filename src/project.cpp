@@ -9,7 +9,7 @@ void InitializeSDL(SDL_Window*& window, SDL_Renderer*& renderer) {
     SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "0");
 
     // Création de la fenêtre
-    window = SDL_CreateWindow("Tatris", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, LARGEUR_FENETRE, HAUTEUR_FENETRE, 0);
+    window = SDL_CreateWindow("Tatris2", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, LARGEUR_FENETRE, HAUTEUR_FENETRE, 0);
     if (window == nullptr) {
         SDL_Quit();
         throw std::runtime_error("Erreur lors de la création de la fenêtre : " + std::string(SDL_GetError()));
